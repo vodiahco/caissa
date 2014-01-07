@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>Companies</item>
+        <item>Candidates</item>
+        <item>Add new company</item>
+
+
+
+
+    </string-array>
+
+    <string-array name="login_array">
+
+        <item>Login</item>
+
+        <item>Help</item>
+        <item>Password help</item>
+        <item>Terms</item>
+
+
+
+    </string-array>
+
+
+    <string-array name="status_array">
+
+        <item>Sent</item>
+
+        <item>1st interview</item>
+        <item>2nd interview</item>
+        <item>3rd interview</item>
+        <item>Offer</item>
+        <item>Offer Accepted</item>
+
+
+    </string-array>
+</resources>

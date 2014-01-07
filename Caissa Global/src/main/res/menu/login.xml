@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:com.sharetray.vine="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_reset"
+          android:title="@string/help"
+          com.sharetray.vine:showAsAction="never" />
+
+</menu>

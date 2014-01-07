@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.sharetray.caissa="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_list"
+        android:title="@string/home"
+        android:icon="@drawable/ic_action_collections_view_as_list"
+        com.sharetray.caissa:showAsAction="always" />
+
+    <item android:id="@+id/action_history"
+        android:title="@string/activity_history_title"
+        android:icon="@drawable/ic_action_collections_go_to_today"
+        com.sharetray.caissa:showAsAction="always" />
+</menu>

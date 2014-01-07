@@ -1,0 +1,113 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+        >
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+
+
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:padding="@dimen/dp8"
+
+
+
+                >
+
+
+
+            <ImageButton
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_add"
+                    android:src="@drawable/ic_action_collections_go_to_today_blue"
+                android:background="@drawable/button_selector"
+                android:layout_marginLeft="@dimen/dp8"
+
+                    />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dp16"
+                android:id="@+id/txt_date"
+                android:layout_gravity="center_vertical|left"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!--<ListView-->
+                <!--android:id="@android:id/list"-->
+                <!--android:layout_marginTop="@dimen/dp16"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:divider="@color/Gray"-->
+                <!--android:dividerHeight="1dp"-->
+                <!--android:background="@color/White"/>-->
+
+
+        <com.sharetray.caissa.global.ESwipeListView
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            android:id="@android:id/list"
+            android:listSelector="#00000000"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeActionLeft="reveal"
+            swipe:swipeActionRight="reveal"
+            swipe:swipeMode="both"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeOpenOnLongPress="true"
+            swipe:swipeAnimationTime="200"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         The drawer is given a fixed width in dp and extends the full height of
+         the container. A solid background is used for contrast
+         with the content view. -->
+
+
+</LinearLayout>

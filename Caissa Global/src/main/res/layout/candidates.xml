@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:tag="back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_content_edit"
+            android:id="@+id/btn_view"
+            android:background="@drawable/button_selector"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp16"
+            android:text="@string/candidates"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/ic_action_navigation_cancel"
+            android:id="@+id/btn_remove"
+            android:text="@string/remove"/>
+
+
+
+
+    </LinearLayout>
+
+
+<LinearLayout android:id="@+id/front"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:padding="@dimen/dp8"
+              android:background="@color/White"
+              android:weightSum="5"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_weight="4"
+                  android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:id="@+id/lay_name"
+            android:layout_gravity="left|center_vertical"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Large Text"
+            android:id="@+id/lay_job_title"
+            android:textColor="@color/Gray"
+            android:layout_gravity="left|center_vertical"/>
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_navigation_cancel"
+            android:visibility="gone"
+            android:id="@+id/img_remove"/>
+
+
+</LinearLayout>
+
+    </FrameLayout>

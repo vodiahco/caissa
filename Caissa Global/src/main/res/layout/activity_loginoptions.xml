@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash_bg"
+            android:id="@+id/activity_main"
+        >
+
+
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        android:padding="@dimen/dp8"
+            android:layout_gravity="center">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Red"
+                android:id="@+id/txt_error"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:gravity="right"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Login"
+                android:id="@+id/textView2"
+                android:gravity="center"/>
+
+
+        <EditText
+                android:id="@+id/inp_email"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+            android:background="@drawable/input_bg"
+            android:layout_marginBottom="@dimen/dp8"
+
+            android:padding="@dimen/dp10"
+                android:hint="@string/prompt_email" />
+
+        <EditText
+                android:id="@+id/inp_pass"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ems="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:maxLength="40"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeActionId="@+id/login"
+            android:background="@drawable/input_bg"
+
+            android:padding="@dimen/dp10"
+                android:imeOptions="actionUnspecified" />
+
+
+        <Button android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp16"
+                android:text="@string/action_sign_in_short"
+                android:paddingLeft="@dimen/dp32"
+                android:paddingRight="@dimen/dp32"
+                android:layout_gravity="right" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
+</ScrollView>
+
+

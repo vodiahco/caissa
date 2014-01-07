@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sharetray.caissa"
+    android:versionCode="9"
+    android:versionName="1.9" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sharetray.caissa.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sharetray.caissa.LoginOptionsActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.sharetray.caissa.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.sharetray.caissa.CompanyActivity"
+            android:label="@string/title_activity_company"
+            android:parentActivityName="com.sharetray.caissa.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sharetray.caissa.MainActivity" />
+
+        </activity>
+        <activity
+            android:name="com.sharetray.caissa.HistoryActivity"
+            android:label="@string/activity_history_title"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+    </application>
+
+</manifest>
