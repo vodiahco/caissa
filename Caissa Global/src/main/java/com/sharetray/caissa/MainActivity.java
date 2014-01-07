@@ -76,11 +76,6 @@ public class MainActivity extends ASActivity implements View.OnClickListener, EO
     View listChildViewAtPosition;
 
 
-
-    //Animator animator;
-
-
-
     private static final String URL=WEBSITE+"/mobile/company/index/extra/1";
 
     private static final String URL_ADD=WEBSITE+"/mobile/company/create";
